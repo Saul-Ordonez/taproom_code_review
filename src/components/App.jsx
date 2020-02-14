@@ -3,6 +3,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404.jsx';
 import Home from './Home.jsx';
+import NavBar from './NavBar.jsx';
 
 function App() {
 
