@@ -8,3 +8,8 @@
   color: white;
   text-decoration: none;
 }
+
+body {
+  margin-top: -16px;
+  margin-left: 0;
+}
