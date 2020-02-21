@@ -1,5 +1,6 @@
 body {
-  background-color: #00244a;
-  background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
-  
+  background-image: url("https://www.flatironhall.com/wp-content/uploads/2019/08/bar-stools-1-1500x630.jpeg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: center; */
 }
