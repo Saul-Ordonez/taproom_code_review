@@ -32,7 +32,7 @@ function NavBar() {
     <div>
     <div style={navStyles}>
     <Link class='link' style={homeLink} to='/'>Home</Link>
-    <Link class='link' style={centerLinks} to='/tapList'>Taplist</Link>
+    <Link class='link' style={centerLinks} to='/cellarlist'>Cellar List</Link>
     <Link class='link' style={centerLinks} to='/addbeer'>Add a Beer</Link>
     </div>
     </div>

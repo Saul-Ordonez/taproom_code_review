@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
     <NavBar/>
-    <p style={homePageStyling}>Here is the homepage for the taproom.</p>
+    <p style={homePageStyling}>Here is the homepage for the beer cellar.</p>
     </div>
   );
 }
