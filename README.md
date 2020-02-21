@@ -10,6 +10,8 @@ This React app allows users to
 
 ## Diagram
 
+![Taproom Diagram](taproom_diagram.jpg)
+
 ## Setup/Installation Requirements
 
 * Clone GitHub project repository onto desktop
