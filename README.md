@@ -6,7 +6,7 @@
 
 ## Description
 
-This React app allows users to
+This React app allows users to views beers available at their local taproom and see how much beer is left in each keg. It also allows an admin to edit and delete beers that are no longer available.
 
 ## Diagram
 
