@@ -1,5 +1,6 @@
 import React from 'react';
-import NewBeerForm from './NewBeerForm.jsx'
+import NewBeerForm from './NewBeerForm.jsx';
+import AgeConfirmation from './AgeConfirmation.jsx';
 
 class NewBeerControl extends React.Component {
 
@@ -8,18 +9,23 @@ class NewBeerControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
   }
 
-  handleClick(){
+  handleTroubleshootingConfirmation(){
     this.setState({formVisibleOnPage: true});
-    console.log('Hey, you clicked me! I do not have code to change my state quite yet, but I will in a moment!');
   }
 
   render(){
+    let currentlyVisibleContent = null;
+    if (this.state.formVisibleOnPage){
+      currentlyVisibleContent = <NewBeerForm />
+    } else {
+      currentlyVisibleContent = <AgeConfirmation onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
+    }
     return (
       <div>
-        <NewBeerForm />
+      <NewBeerForm />
       </div>
     );
   }
