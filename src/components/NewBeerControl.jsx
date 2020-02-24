@@ -25,7 +25,7 @@ class NewBeerControl extends React.Component {
     }
     return (
       <div>
-      <NewBeerForm />
+      {currentlyVisibleContent}
       </div>
     );
   }
