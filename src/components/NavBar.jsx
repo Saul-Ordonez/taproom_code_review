@@ -10,7 +10,7 @@ function NavBar() {
     fontSize: '30px',
     paddingTop: '40px',
     paddingLeft: '20px',
-    backgroundColor: 'black',
+    border: 'linear-gradient',
     height: '100px',
     position: 'absolute',
     width: '100vw',
@@ -30,7 +30,7 @@ function NavBar() {
 
   return (
     <div>
-    <div style={navStyles}>
+    <div class='navStyles'>
     <Link class='link' style={homeLink} to='/'>Home</Link>
     <Link class='link' style={centerLinks} to='/cellarlist'>Cellar List</Link>
     <Link class='link' style={centerLinks} to='/addbeer'>Add a Beer</Link>
