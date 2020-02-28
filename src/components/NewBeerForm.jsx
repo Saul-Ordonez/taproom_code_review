@@ -11,12 +11,12 @@ function NewBeerForm() {
 
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();
-    _name.value = '';
-    _brewery.value = '';
-    _cost.value = '';
-    _size.value = '';
-    _abv.value = '';
-    _ibu.value = '';
+    _name.value = ''
+    _brewery.value = ''
+    _cost.value = ''
+    _size.value = ''
+    _abv.value = ''
+    _ibu.value = ''
   }
 
   return (
