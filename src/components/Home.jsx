@@ -4,6 +4,7 @@ function Home() {
 
   return (
     <div>
+    <h1> Personal Beer Cellar. Keep Track of all your Ales!</h1>
     </div>
   );
 }

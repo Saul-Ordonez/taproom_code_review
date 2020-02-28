@@ -1,13 +1,8 @@
 import React from 'react';
 import './CellarList.css';
-import NavBar from './NavBar.jsx';
 import Beer from './Beer.jsx'
 
-function CellarList() {
-
-  const availableBeers = [
-
-  ]
+function CellarList(props) {
 
   const beerlist = {
 
@@ -15,9 +10,8 @@ function CellarList() {
 
   return (
     <div>
-    <NavBar/>
     <div style={beerlist}>
-    {availableBeers.map((beer, index) =>
+    {props.beerlist.map((beer, index) =>
       <Beer
       name={beer.name}
       brewery={beer.origin}
@@ -32,4 +26,4 @@ function CellarList() {
   )
 }
 
-export default CellarList
+export default CellarList;

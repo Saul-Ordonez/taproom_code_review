@@ -1,6 +1,6 @@
 import React from 'react';
 import NewBeerForm from './NewBeerForm.jsx';
-import AgeConfirmation from './AgeConfirmation.jsx';
+import ShowBeerForm from './ShowBeerForm'
 
 class NewBeerControl extends React.Component {
 
@@ -9,19 +9,19 @@ class NewBeerControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
-    this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
+    this.handleShowingBeerForm = this.handleShowingBeerForm.bind(this);
   }
 
-  handleTroubleshootingConfirmation(){
+  handleShowingBeerForm(){
     this.setState({formVisibleOnPage: true});
   }
 
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
-      currentlyVisibleContent = <NewBeerForm />
+      currentlyVisibleContent = <NewBeerForm onNewBeerCreate={this.props.onNewBeerCreate}/>
     } else {
-      currentlyVisibleContent = <AgeConfirmation onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
+      currentlyVisibleContent = <ShowBeerForm onHandleShowingBeerForm={this.handleShowingBeerForm}/>;
     }
     return (
       <div>
