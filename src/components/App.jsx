@@ -16,7 +16,7 @@ function App() {
     <div>
     <NavBar />
     <Switch>
-      <Route exact path='/' component={Home} />
+      <Route exact path='/' component={CellarList} />
       <Route path='/newbeer' component={NewBeerControl} />
       <Route component={Error404}/>
     </Switch>
