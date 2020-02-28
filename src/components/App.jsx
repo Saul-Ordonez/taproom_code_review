@@ -6,11 +6,13 @@ import Home from './Home.jsx';
 import NavBar from './NavBar.jsx';
 import NewBeerControl from './NewBeerControl.jsx'
 import CellarList from './CellarList.jsx';
+import AgeConfirmation from './AgeConfirmation.jsx';
 
 function App() {
 
   return (
     <div>
+    <NavBar />
     <Switch>
       <Route exact path='/' component={Home} />
       <Route path='/newbeer' component={NewBeerControl} />
