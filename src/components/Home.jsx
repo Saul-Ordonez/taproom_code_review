@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './NavBar.jsx';
+import CellarList from './CellarList.jsx';
 
 function Home() {
 
@@ -8,7 +8,7 @@ function Home() {
 
   return (
     <div>
-    <NavBar/>
+    <CellarList />
     </div>
   );
 }

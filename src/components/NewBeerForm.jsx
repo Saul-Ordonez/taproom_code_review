@@ -10,8 +10,14 @@ function NewBeerForm() {
   let _ibu = null;
 
   function handleNewBeerFormSubmission(event) {
-  event.preventDefault();
-}
+    event.preventDefault();
+    _name.value = '';
+    _brewery.value = '';
+    _cost.value = '';
+    _size.value = '';
+    _abv.value = '';
+    _ibu.value = '';
+  }
 
   return (
     <div>

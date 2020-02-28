@@ -4,9 +4,11 @@ import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404.jsx';
 import Home from './Home.jsx';
 import NavBar from './NavBar.jsx';
-import NewBeerControl from './NewBeerControl.jsx'
+import NewBeerForm from './NewBeerForm.jsx'
 import CellarList from './CellarList.jsx';
 import AgeConfirmation from './AgeConfirmation.jsx';
+import Beer from './Beer.jsx';
+import NewBeerControl from './NewBeerControl';
 
 function App() {
 
