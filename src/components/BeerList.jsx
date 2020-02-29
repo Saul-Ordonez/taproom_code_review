@@ -1,20 +1,15 @@
 import React from 'react';
-import './CellarList.css';
-import Beer from './Beer.jsx'
+import Beer from './Beer';
+import PropTypes from 'prop-types';
 
-function CellarList(props) {
-
-  const beerlist = {
-
-  }
+function BeerList(props) {
 
   return (
     <div>
-    <div style={beerlist}>
     {props.beerlist.map((beer, index) =>
       <Beer
       name={beer.name}
-      brewery={beer.origin}
+      brewery={beer.brewery}
       size={beer.size}
       cost={beer.cost}
       abv={beer.abv}
@@ -22,8 +17,11 @@ function CellarList(props) {
       key={index}/>
     )}
     </div>
-    </div>
-  )
+  );
 }
 
-export default CellarList;
+BeerList.propTypes = {
+  beerList: PropTypes.array
+};
+
+export default BeerList;

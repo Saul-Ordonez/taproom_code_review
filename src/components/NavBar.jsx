@@ -30,9 +30,9 @@ function NavBar() {
 
   return (
     <div>
-    <div class='navStyles'>
+    <div style={navStyles}>
     <Link class='link' style={homeLink} to='/'>Home</Link>
-    <Link class='link' style={centerLinks} to='/cellarlist'>Cellar List</Link>
+    <Link class='link' style={centerLinks} to='/beerlist'>Cellar List</Link>
     <Link class='link' style={centerLinks} to='/newbeer'>Add a Beer</Link>
     </div>
     </div>
